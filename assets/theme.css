@@ -1,24 +1,25 @@
 /* Readability theme. Layout remains in style.css; colours and typography can evolve here. */
 :root {
-  --sans: Meiryo, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-  --serif: "Yu Mincho", "Hiragino Mincho ProN", "Noto Serif JP", serif;
+  --sans: "BIZ UDPGothic", Meiryo, sans-serif;
+  --serif: "Yu Gothic", "Hiragino Sans", sans-serif;
   --muted: #42564e;
 }
 body { font-size: 16px; line-height: 1.9; }
 .site-header { flex-wrap: wrap; row-gap: 20px; }
 .brand { font-size: 21px; line-height: 1.6; letter-spacing: 0; }
-.brand-title { display: block; font-family: var(--serif); font-weight: 600; }
+.brand-title { display: block; font-family: var(--serif); }
 .brand-title > span { display: inline-block; }
 .brand small { font-family: var(--sans); font-size: 12px; margin-top: 4px; }
 .site-header nav { font-size: 14px; gap: 24px; flex-wrap: wrap; }
-.hero h1 { font-weight: 600; letter-spacing: .055em; font-size: clamp(42px, 4.2vw, 58px); }
+.hero h1 { font-size: clamp(42px, 4.2vw, 58px); }
+.hero h1, .page-lead h1 { font-weight: 500; letter-spacing: .045em; line-height: 1.46; }
 .hero-copy, .intro { font-size: 16px; }
 .hero-figure { transform: none; }
 .figure-top { font-size: 13px; }
 .figure-top span:last-child { font-size: 11px; }
 .figure-note, .inquiry-steps { font-size: 14px; }
 .eyebrow { font-size: 12px; letter-spacing: .12em; }
-h2, .page-lead h1 { font-weight: 600; letter-spacing: .025em; }
+.brand-title, h2 { font-weight: 500; letter-spacing: .03em; }
 .subject-link strong { font-weight: 700; }
 .subject-link span, .card-meta { font-size: 13px; }
 .resource-card h3 { font-size: 19px; }
@@ -29,7 +30,6 @@ h2, .page-lead h1 { font-weight: 600; letter-spacing: .025em; }
 .section-heading > p { font-size: 14px; }
 .research-feature p, .reading p { font-size: 15px; }
 .research-index > span, .research-index small { font-size: 14px; }
-.research-feature h2 { font-weight: 600; }
 .research-summary { font-size: 14px; }
 .prose, .detail-body { font-size: 16px; line-height: 2; }
 .fine, .source-note, .back { font-size: 14px; }
